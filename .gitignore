@@ -1,0 +1,19 @@
+build/
+!**/src/main/**
+!**/src/test/**
+
+### Gradle ###
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Allure ###
+.allure
+
+### Mac OS ###
+.DS_Store
