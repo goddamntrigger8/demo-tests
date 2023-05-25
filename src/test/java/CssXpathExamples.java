@@ -3,7 +3,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class CssXpathExamples {
-    void sssXpathExamples( {
+    void сssXpathExamples() {
         //<input id="userEmail">
         $("[id=userEmail]").setValue("lupa@gmail.com");
         $("[#userEmail]").setValue("lupa@gmail.com");
@@ -27,7 +27,7 @@ public class CssXpathExamples {
         $(byText("Hello!"));
 
         //по куску текста
-        $(withText("ello"))
+        $(withText("ello"));
 
-    })
+    }
 }

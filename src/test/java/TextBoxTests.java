@@ -10,10 +10,11 @@ public class TextBoxTests {
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
+        Configuration.browser = System.getProperty("browser", "safari");
     }
     @Test
     void fillFormTest() {
-        open("https://demoqa.com/text-box");
+        open("/text-box");
         $("[id=userName]").setValue("pupa");
         $("[id=userEmail]").setValue("lupa@gmail.com");
         $("[id=currentAddress]").setValue("rus - address 1");
