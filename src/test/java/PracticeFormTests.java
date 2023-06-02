@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class PracticeFormTests {
     @BeforeAll
@@ -48,5 +47,6 @@ public class PracticeFormTests {
                 text("Music"),
                 text("Uttar Pradesh"),
                 text("Agra"));
+        sleep(5000);
     }
 }
