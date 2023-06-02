@@ -16,4 +16,5 @@ dependencies {
 
 test {
     useJUnitPlatform()
+    //systemProperty "chromeoptions.prefs", "intl.accept_languages=en" //задать преференцию для языка у хрома
 }
