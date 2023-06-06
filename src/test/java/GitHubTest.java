@@ -3,6 +3,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -34,10 +35,8 @@ public class GitHubTest {
         open("https://github.com/");
         $(byText("Solutions")).hover();
         $("[href='/enterprise']").click();
-        //Убедитесь что загрузилась нужная страница (например что заголовок - "Build like the best."
-        $("[class='h1-mktg mb-3 color-fg-default']").shouldHave(text("Build like the best"));
+        //Убедитесь что загрузилась нужная страница (например что заголовок - "Build like the best")
+        $(byText("Build like the best")).shouldBe(visible);
         sleep(3000);
     }
-
-
 }
